@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Akademia api orchestrator</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<p th:text="#{welcome}">Bienvenido a nuestra página!</p>
+
+<a th:href="@{/units}">units</a>
+<a th:href="@{/answers}">answers</a>
+
+<ul>
+  <li><a th:href="@{/?lang=es}" th:text="#{es}">Español</a></li>
+  <li><a th:href="@{/?lang=en}" th:text="#{en}">Inglés</a></li>
+</ul>
+
+</body>
+
+</html>

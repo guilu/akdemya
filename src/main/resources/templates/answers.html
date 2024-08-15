@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Akademia answers</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<ul>
+  <li th:each="answer : ${answers}" th:text="${answer.getText()}"></li>
+</ul>
+
+</body>
+</html>
