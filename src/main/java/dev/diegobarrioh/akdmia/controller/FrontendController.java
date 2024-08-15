@@ -30,4 +30,11 @@ public class FrontendController {
         return "units";
     }
 
+    @GetMapping("/answers")
+    public String answerList(Model model){
+        List<Unit> answers = apiService.getAnswers();
+        model.addAttribute("answers", answers);
+        return "answers";
+    }
+
 }

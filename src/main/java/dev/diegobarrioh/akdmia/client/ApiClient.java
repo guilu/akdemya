@@ -14,4 +14,7 @@ public interface ApiClient {
     @GetMapping(path ="/api/v2/units")
     List<Unit> getUnits(@RequestHeader("authorization") String authorization);
 
+    @GetMapping(path ="/api/v2/answers")
+    List<Unit> getAnswers(@RequestHeader("authorization") String authorization);
+
 }
